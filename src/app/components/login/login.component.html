@@ -1,0 +1,8 @@
+<label> Email</label>
+<input type="email" [(ngModel)]="email" />
+<label> Password</label>
+<input type="text" [(ngModel)] = "password"/>
+<button value="login" (click)='login()'>Login</button>
+
+<button (click)='loginWithGoogle()' >Login with google</button>
+<button (click)='signup()' >New User</button>

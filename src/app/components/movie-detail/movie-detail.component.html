@@ -1,0 +1,6 @@
+<button (click) = "addMovie()">Add to list</button>
+<h1>{{movie.title}}</h1>
+<img [src]="this.movie.poster_path | safe">
+<h4>{{movie.overview}}</h4>
+<h4>{{movie.runtime}}</h4>
+

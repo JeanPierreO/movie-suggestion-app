@@ -1,0 +1,7 @@
+<div [style.display] = "auth.getLoggedIn() ? 'block': 'none' ">
+  <a>Logged in as{{username}}</a>
+  <a routerLink="/search"> Search</a>
+  <a routerLink="/list">List</a>
+  <button (click) = 'logout()'>Logout</button>
+</div>
+

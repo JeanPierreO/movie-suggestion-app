@@ -1,0 +1,12 @@
+<h1>Search movies</h1>
+<input (keyup)="searchTerms.next($event.target.value)">
+
+<div *ngIf="results">
+
+  <div *ngFor="let result of results"   (click)='goToDetail(result)'>
+ 
+      {{ result.title}}
+     
+  </div>
+
+</div>
